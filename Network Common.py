@@ -5,7 +5,7 @@ import subprocess
 from icmplib import ping
 
 def get_ip_range():
-    ip_range = input("pls enter ip range (x.x.x.x/x)")
+    ip_range = input("Plese enter ip range (x.x.x.x/x)")
     return str(ip_range)
     
 def ping_loop():
@@ -23,7 +23,7 @@ def ping_loop():
                 dead_ip.append(ip.compressed)
                 print(f"{ip.compressed} is dead!")
     except Exception as e:
-        print(f"{e}\nTry Again Pls")
+        print(f"{e}\nTry Again Plese")
         pass
     return alive_ip, dead_ip
 
