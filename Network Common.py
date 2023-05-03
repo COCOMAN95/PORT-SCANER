@@ -75,21 +75,6 @@ def clear_screen():
     except AttributeError:
         subprocess.run("cls",shell=True)
 
-def goodbye_screen():
-    clear_screen()
-    print("------------------------------------------------------------")
-    print("|             network scan finished succesfuly             |")
-    print("|                                                          |")
-    print("| results are in found_by_ping.txt, found_by_syn.txt files |")
-    print("|                                                          |")
-    print("|     pls check my github: https://github.com/arielkl9     |")
-    print("|                                                          |")
-    print("|                 thanks for using my tool!                |")
-    print("|                                                          |")
-    print("|                    press enter to exit                   |")
-    print("------------------------------------------------------------")
-    input()
-
 def main():
     try:    
         port_list = [22,3389,445,139,80,443]
@@ -103,7 +88,6 @@ def main():
     except KeyboardInterrupt:
                 print(f"\nExiting")
                 exit()
-    goodbye_screen()
 
 global alive_ip
 global dead_ip
