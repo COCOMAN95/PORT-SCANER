@@ -1,6 +1,6 @@
 import socket
 
-target="10.0.0.27"
+target="X.X.X.X"
 
 try:
     with open('ports.txt','w') as textfile:
